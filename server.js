@@ -8,7 +8,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.static("."));
-
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
 app.get("/api/products", async (req, res) => {
     try {
         const response = await axios.get(
