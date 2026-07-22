@@ -65,7 +65,7 @@ function renderProducts(){
 
     products.forEach(item=>{
 
-        const harga=item.price+1000;
+        const harga = item.price + 5000;
 
         const area={};
 
