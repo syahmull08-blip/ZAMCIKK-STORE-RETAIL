@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.get("/api/products", async (req, res) => {
     try {
         const response = await axios.get(
-            `${process.env.BASE_URL}/products`,
+            `${process.env.BASE_URL}/products?type=all`,
             {
                 headers: {
                     Authorization: `Bearer ${process.env.API_KEY}`,
