@@ -1,4 +1,4 @@
-const WA_NUMBER = "6289528598986"; // GANTI DENGAN NOMOR WA KAMU
+const WA_NUMBER = "6289528598985"; // GANTI DENGAN NOMOR WA KAMU
 
 let allProducts = [];
 let currentType = "all";
@@ -69,7 +69,7 @@ function renderProducts(){
 
         const area={};
 
-        item.description.split("\n").forEach(line=>{
+        (item.description || "").split("\n").forEach(line=>{
 
             const m=line.match(/AREA\s*(\d)\s*[:=]\s*(.+)/i);
 

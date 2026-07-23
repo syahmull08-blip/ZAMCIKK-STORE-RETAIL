@@ -22,9 +22,13 @@ app.get("/api/products", async (req, res) => {
             }
         );
 
+        console.log("Total API:", response.data.data.length);
+        
         const products = response.data.data.filter(p =>
-            ["xla", "xda", "xlf"].includes((p.type || "").toLowerCase())
+            /^(XLA|XDA|KDA|XLF)/i.test(p.code)
         );
+        
+        console.log("Setelah filter:", products.length);
 
         res.json({
             success: true,
