@@ -1,4 +1,4 @@
-const WA_NUMBER = "6289528598985"; // GANTI DENGAN NOMOR WA KAMU
+const WA_NUMBER = "6289528598986"; // GANTI DENGAN NOMOR WA KAMU
 
 let allProducts = [];
 let currentType = "all";
